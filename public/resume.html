@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./base.css">
+  <title>somours的简历</title>
+</head>
+<body>
+  <div class="wraper">
+    <section class="base">
+      <header class="title">基本信息</header>
+      <ul class="base-infos">
+        <li class="item">
+          <span class="name">姓名</span>
+          <span class="val">康维</span>
+        </li>
+        <li class="item">
+          <span class="name">求职意向</span>
+          <span class="val">web前端工程师  / H5开发工程师 </span>
+        </li>
+        <li class="item">
+          <span class="name">工作经验</span>
+          <span class="val">2年</span>
+        </li>
+        <li class="item">
+          <span class="name">邮箱</span>
+          <span class="val">932223023@qq.com</span>
+        </li>
+        <li class="item">
+          <span class="name">学历</span>
+          <span class="val">成都理工大学 | 本科</span>
+        </li>
+      </ul>
+    </section>
+    <section class="skill-box">
+      <header class="title">专业技能</header>
+      <!-- <div class="skill">
+        <em>html</em><em>css</em><em>javascript</em><em>vue</em><em>element</em>
+        <em>node</em><em>cordova</em><em>nuxt</em><em>sass</em><em>git</em>
+      </div> -->
+      <div class="skills">
+        <p>1.	熟练掌握html和css及html5，css3新特性，sass，stylus等css预编译语言，以及媒体查询，flex布局，及响应式布局等</p>
+        <p>2.	熟练使用原生js及jQuery等库进行pc端网页开发</p>
+        <p>3.	熟练使用vue,vuex，better-scroll，vant UI，elementUI等框架进行pc + 移动端,以及后台管理系统的单页面开发</p>  
+        <p>4.	熟练使用nuxt框架做vue的服务端渲染，构建多页应用</p> 
+        <p>5.	熟练使用ajax，axios与后端人员交互，实现前后端页面架构的分离</p> 
+        <p>6.	熟练使用gulp，webpack等自动化构建工具</p>
+        <p>7.	熟练使用git，github等代码管理工具</p>
+        <p>8.	较熟悉nodejs常用模块及api，做了一些demo（如爬虫等）</p>  
+        <p>9.	了解微信公众号，及小程序的组件与api</p>
+      </div>
+    </section>
+    <section class="work-box">
+      <header class="title">工作经历</header>
+      <ul class="companys">
+        <li>
+          <span class="time">2016.02/2017.07</span>
+          <span class="name">成都思乐科技有限公司</span>
+          <span class="position">职位： web前端</span>
+        </li>
+        <li>
+          <span class="time">2017.07-2018.02</span>
+          <span class="name">成都小钉科技有限公司</span>
+          <span class="position">职位： web前端</span>
+        </li>
+        <li>
+          <span class="time">2018.03-2018.12</span>
+          <span class="name">成都碰她网络科技有限公司</span>
+          <span class="position">职位： web前端</span>
+        </li>
+      </ul>
+    </section>
+    <section class="project-box">
+      <header class="title">主要项目</header>
+      <div class="projects">
+        <div class="project">
+          <h3 class="sub-title">
+            <a href="http://demo.chainexcloud.com/game/boc?lang=zh-CN">区块链交易所（新）</a>
+          </h3>
+          <p>项目介绍：完整功能的区块链交易平台。项目技术：1.采用nuxt框架构建多页应用和服务端渲染，动态设置页面的head，title，meta等标签信息，优化了seo。2采用vue-i18n做多语言开发；3相应式网站，手机，平板，pc，以及超大屏幕均能很好兼容，通过sass的mixin，include及css的@media实现；4.大量页面需要实时更新，采用websocket获取后端推送数据，vuex模块化更新页面；5采用tradingview插件做k线图，echarts做深度图等普通图表；6.部署时，前端需要单独起自己的服务，做到完全的前后端分离。我主要负责币币交易页面以及安全设置模块的编写。</p>
+        </div>
+
+        <div class="project">
+          <h3 class="sub-title">
+            <a href="https://www.geccex.com/">区块链交易所（老）</a>
+          </h3>
+          <p>项目介绍：区块链场外交易的平台。项目技术：pc端： vue全家桶+axios + element UI + i18n开发，还用websocket做了一个小型的聊天框；h5端： vue+全家桶 +axios + vant UI + i18n开发；app：h5端的打包后的静态页面 +cordova打包生成的混合app；后台管理系统：跟pc一样，但不用多开发语言。前期我主要负责移动端和app的开发，后期负责所有端的维护，因公司是出售交易所平台，相应的访问网站还有（https://aocx.io/#/），（https://woq.io/#/）等</p>
+        </div>
+
+        <div class="project">
+          <h3 class="sub-title">
+            <a href="http://59.110.229.139:82//#/recommend">移动端音乐播放器</a>
+          </h3>
+          <p>
+            项目介绍：模仿qq音乐的界面，实现了推荐，歌手，排行榜，搜索4个基本页面，以及播放音乐的核心组件。项目技术：1.vue全家桶进行项目的开发；2使用fast-click解决移动端点击事件300ms的延迟问题；3使用jsonp与axios，promise进行请求的封装，主要使用jsonp抓取qq音乐的数据，解决跨域问题。对于一些不是jsonp的接口，使用express进行服务端请求，然后返回给本地，本地再使用axios进行请求；4.用better-scroll实现页面中的滚动效果，并封装了公用的滚动组件；5.使用vue-lazyload实现有列表的页面的图片的懒加载;6.用原生js，vue的transition组件及css3的animation，transition等属性实现页面的动画效果。（子父级页面之间的切换）
+          </p>
+        </div>
+        <div class="project">
+          <h3 class="sub-title">
+            <a href="javascript:void()">神锯子家平台及后台管理系统(现已下线)</a>
+          </h3>
+          <p>
+            项目描述：一个智能家装的平台，包含找设计，找施工，及材料商城。以及后台管理配置的页面。
+            项目技术：商城展示页面：1.jQuery开发，不过根据vue-cli脚手架改写搭建了项目结构，能使用es6的语法；并且实现了组件化，模块化的开发；2.使用sass加快了css的编写，使用art-template模板引擎与用ajax获取到的数据进行页面的渲染，减少了使用jquery进行字符串的拼接。后台管理系统： 1.vue全家桶+axios+iview UI组件库进行开发；2.在管理系统中常用的富文本编辑器使用的是uediter。此系列项目均由我和另一前段共同开发完成与维护
+          </p>
+        </div>
+        <div class="project">
+          <h3 class="sub-title">
+            <a href="javascript:void()">毕业邀请纪念(H5页面)</a>
+          </h3>
+          <p>
+            项目描述：主要使用swiper进行整体布局，animate.css里的class进行css的动画效果展示，用vw为单位解决手机不通屏幕尺寸的问题。
+          </p>
+        </div>
+        <div class="project">
+          <h3 class="sub-title">
+            <a href="http://www.hlcake.cn/">Hello cake蛋糕</a>
+            <a href="http://www.afcjiaju.com/">四川奥飞斯家具</a>
+          </h3>
+          <p>
+            应处于实习期间，所以主要是写静态页面的布局与用插件编写轮播图效果等，不过也慢慢的用ajax与后端做数据交互等
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="evaluation-box">
+      <header class="title">自我评价</header>
+      <div class="content">
+        <p>本人热爱前端， 在pc与h5端以及app都有相应的项目经验，现主要技术栈是vue全家桶单页应用，以及nuxt.js做vue的服务端渲染。目前正在学习react以及node的实战应用，以成为全栈工程师为目标。</p>
+        <p>最后感谢您花时间阅读我的简历，期待能有机会和您共事</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
